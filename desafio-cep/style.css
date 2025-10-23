@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 80px;
+}
+
+.cep {
+  padding: 4px;
+  font-size: 1.125rem;
+  outline: none;
+  border: 2px solid #000;
+}
+
+.btn {
+  display: inline-block;
+  background: #caf;
+  border: 1px solid #000;
+  font-size: 1.125rem;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.container-card {
+  margin: 3.75rem;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: max-content;
+  padding: 0.625rem;
+  border: 2px solid #000;
+  background: #caf;
+}
+
+.loading {
+  display: none;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #caf;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  animation: ani 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes ani {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
